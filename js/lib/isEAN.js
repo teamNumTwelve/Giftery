@@ -8,7 +8,7 @@
  * Reference: https://en.wikipedia.org/wiki/International_Article_Number
  */
 
-import assertString from './util/assertString';
+import assertString from './util/assertString.js';
 
 /**
  * Define EAN Lenghts; 8 for EAN-8; 13 for EAN-13

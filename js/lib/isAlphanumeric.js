@@ -1,5 +1,5 @@
-import assertString from './util/assertString';
-import { alphanumeric } from './alpha';
+import assertString from './util/assertString.js';
+import { alphanumeric } from './alpha.js';
 
 export default function isAlphanumeric(str, locale = 'en-US') {
   assertString(str);

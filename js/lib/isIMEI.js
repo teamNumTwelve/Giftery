@@ -1,4 +1,4 @@
-import assertString from './util/assertString';
+import assertString from './util/assertString.js';
 
 
 let imeiRegex = /^[0-9]{15}$/;

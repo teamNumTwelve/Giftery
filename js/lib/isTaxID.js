@@ -1,4 +1,4 @@
-import assertString from './util/assertString';
+import assertString from './util/assertString.js';
 
 /**
  * An Employer Identification Number (EIN), also known as a Federal Tax Identification Number,

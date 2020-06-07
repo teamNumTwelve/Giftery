@@ -1,4 +1,4 @@
-import assertString from './util/assertString';
+import assertString from './util/assertString.js';
 
 const isBICReg = /^[A-z]{4}[A-z]{2}\w{2}(\w{3})?$/;
 

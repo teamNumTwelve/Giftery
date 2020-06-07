@@ -1,5 +1,5 @@
-import assertString from './util/assertString';
-import includes from './util/includes';
+import assertString from './util/assertString.js';
+import includes from './util/includes.js';
 
 // from https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 const validISO31661Alpha2CountriesCodes = [

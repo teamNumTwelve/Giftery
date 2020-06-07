@@ -1,4 +1,4 @@
-import assertString from './util/assertString';
+import assertString from './util/assertString.js';
 
 // supports Bech32 addresses
 const btc = /^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$/;
