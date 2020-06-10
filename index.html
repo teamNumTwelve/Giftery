@@ -19,7 +19,7 @@
 <body>
 <nav>
 <!-- start section top header -->
-    <section id="up" class="top-header p-2">
+    <section id="up" class="top-header p-2 sticky-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 text-left">
@@ -43,10 +43,147 @@
                         </div>
                       </div>
                     <a href="#" class="pr-2" title="Cart" target="_blank" rel="noopener noreferrer"><i class="fas fa-shopping-cart fa-lg"></i><span class="cart-notifi badge badge-light">4</span></a>
-                    <span><i class="fas fa-bars fa-lg"></i></span>
+                    <span id="menu"><i class="fas fa-bars fa-lg"></i></span>
                 </div>
             </div>
         </div>
+        <!-- start menu button -->
+        <div class="menu-bars">
+            <span class="close"><i class="fa fa-window-close fa-lg"></i></span>
+            <div class="menu-header text-center py-3">
+                <img src="images/Giftery_Logo.jpg" class="w-75" alt="logo">
+            </div>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn text-uppercase btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        catagories
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                          <li><a href="#">Link 1</a></li>
+                          <li><a href="#">Link 1</a></li>
+                          <li><a href="#">Link 1</a></li>
+                          <li><a href="#">Link 1</a></li>
+                          <li><a href="#">Link 1</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn text-uppercase btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        birthday
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn text-uppercase btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        anniveristy
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn text-uppercase btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingFour" aria-expanded="false" aria-controls="headingFour">
+                          personlised
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button class="btn text-uppercase btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingFive" aria-expanded="false" aria-controls="headingFive">
+                          recipient
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="headingFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button class="btn text-uppercase btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#headingSix" aria-expanded="false" aria-controls="headingSix">
+                          occasions
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="headingSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                      <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 1</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+        </div>
+    <!-- end menu button -->
+        
     </section>
 <!-- End section top header -->
 <!-- start section mediall header -->
