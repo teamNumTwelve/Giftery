@@ -21,7 +21,7 @@ Theme Name: Giftery Website
     position: fixed;
     right: 0;
     z-index: 2;
-    top: 57px;
+    top: 3.3rem;
     box-shadow: -2px 0px 6px #aaa;
     transition: auto;
     display: none;
@@ -79,6 +79,10 @@ Theme Name: Giftery Website
     }
     .head .line:after{
         width: 80%;
+    }
+    .top-header .menu-bars{
+        width: 50%;
+        top: 5rem;
     }
  }
  @media (max-width: 991px) { 
