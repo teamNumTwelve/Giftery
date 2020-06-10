@@ -5,9 +5,35 @@ Theme Name: Giftery Website
 /*start first section top-header*/
 .top-header{
     background-color: #eee;
+    position: relative;
+}
+.postionTop{
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.top-header .menu-bars{
+    width: 25%;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    top: 57px;
+    box-shadow: -2px 0px 6px #aaa;
+    transition: auto;
+    display: none;
+}
+.top-header .menu-bars .close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 .top-header a,
-.top-header span{
+.top-header span,
+.top-header .menu-bars .close:hover{
     color: #1e285d;
 }
 .top-header span{
