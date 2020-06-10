@@ -50,7 +50,7 @@ $("#subscribe").on("click",function(){
 $("#searchInput").on("change",function(){
   "use strict";
   let search = $("#searchInput").val();
-  if (!validator.isAlpha(search, ['en-US'])){
+  if (!validator.isAlphanumeric(search, ['en-US'])){
     $("#hintMessage").html("Your value <strong> "+search+" </strong> is not letter");
     $('#myModal').modal('show');
   }
@@ -63,11 +63,23 @@ $("#searchButton").on("click",function(){
     $("#hintMessage").text("you can't enter empty value");
     $('#myModal').modal('show');
     return false;
-  } else if (!validator.isAlpha(search, ['en-US'])){
+  } else if (!validator.isAlphanumeric(search, ['en-US'])){
     $("#hintMessage").html("Your value <strong> "+search+" </strong> is not letter");
     $('#myModal').modal('show');
     return false;
   } else{
     return true;
   }
+});
+
+/*gift favorite*/
+$(".g-fav").on("click", function(e){
+  "use strict";
+  //css("color","red");
+  if($(e.target).css("color")==="rgb(33, 37, 41)"){
+    $(e.target).css("color","red");
+  } else{
+    $(e.target).css("color","rgb(33, 37, 41)");
+  }
+    
 });
