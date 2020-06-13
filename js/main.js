@@ -22,6 +22,20 @@ $("document").ready(function(){
           $(window).scrollTop()>50?$("#up").addClass("postionTop"):$("#up").removeClass("postionTop");
         });
       });
+      $('.gift-content .row').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true,
+        arrows:true,
+        prevArrow:`<div class="navigation-perv">
+                  <span class="gift-perv slick-prev slick-arrow" aria-label="Previous">&LessLess;</span>
+                  </div>`,
+        nextArrow:`<div class="navigation-next">
+                  <span class="gift-next slick-nexr slick-arrow" aria-label="Next" >&GreaterGreater;</span>
+                  </div>`,
+      });
 });
 
 //footer seaction
@@ -92,12 +106,11 @@ $(".g-fav").on("click", function(e){
 /*menu*/
 $("#menu").on("click",function(){
   "user strict";
-  $(".menu-bars").slideToggle(1000);
+  $(".menu-bars").slideToggle(600);
 });
 
 //close
-
 $(".close").on("click",function(){
   "user strict";
-  $(".menu-bars").slideToggle(1000);
+  $(".menu-bars").slideToggle(500);
 });

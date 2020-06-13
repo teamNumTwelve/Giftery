@@ -225,6 +225,12 @@ Theme Name: Giftery Website
     animation-duration: 1s;
     transition: ease-in 1s transform;
 }
+.gift-content .item{
+    padding: 1rem;
+}
+.gift-content .item .gift{
+    width: 350px;
+}
 .gift-content .gift{
     margin-bottom: 1.2rem;
 }
@@ -243,10 +249,10 @@ Theme Name: Giftery Website
     display: none;
 }
 .navigation-perv{
-    left: 5%;
+    left: -5%;
 }
 .navigation-next{
-    right: 5%;
+    right: -5%;
 }
 /*popular*/
 .popular-item{
