@@ -22,7 +22,7 @@ $("document").ready(function(){
           $(window).scrollTop()>50?$("#up").addClass("postionTop"):$("#up").removeClass("postionTop");
         });
       });
-      $('.gift-content .row').slick({
+      $('.gift-content-slider .row').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 1,

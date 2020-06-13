@@ -228,7 +228,7 @@ Theme Name: Giftery Website
 .gift-content .item{
     padding: 1rem;
 }
-.gift-content .item .gift{
+.gift-content-slider .item .gift{
     width: 350px;
 }
 .gift-content .gift{
@@ -288,4 +288,58 @@ Theme Name: Giftery Website
     bottom: 0;
     padding: 1rem;
     display: none;
+}
+/*product*/
+.page-navigate{
+    position: relative;
+}
+.page-navigate .breadcrumb-overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(158, 108, 131, 0.5215686274509804);
+    padding-top: 5rem;
+}
+.page-navigate .breadcrumb-overly .breadcrumb{
+    background-color: transparent
+}
+.page-navigate .breadcrumb-overly .breadcrumb-item.active{
+    color: #fff;
+}
+.page-navigate .breadcrumb-overly .breadcrumb-item a{
+    color: #1e285d;
+}
+@media ( max-width:595px ){
+    .page-navigate .breadcrumb-overly{
+        padding-top: 0.5rem;
+    }
+}
+.product-content .asid{
+    background-color: #eee;
+    padding: 10px;
+    overflow-x: scroll;
+}
+.product-content .asid .catagory,
+.product-content .asid .colors{
+    border-bottom: 1px solid #4444448c;
+    padding-bottom: 1rem;
+}
+.product-content .asid h4{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.product-content .asid .colors .link{
+    content: "";
+    width: 20px;
+    height: 20px;
+    padding:1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    flex: 0 0 25%;
+}
+.sort .options{
+    padding-left: 0.5rem;
 }
