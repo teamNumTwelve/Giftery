@@ -302,13 +302,15 @@ Theme Name: Giftery Website
     background-color: rgba(158, 108, 131, 0.5215686274509804);
     padding-top: 5rem;
 }
-.page-navigate .breadcrumb-overly .breadcrumb{
+.page-navigate .breadcrumb-overly .breadcrumb,
+.item-Product .breadcrumb{
     background-color: transparent
 }
 .page-navigate .breadcrumb-overly .breadcrumb-item.active{
     color: #fff;
 }
-.page-navigate .breadcrumb-overly .breadcrumb-item a{
+.page-navigate .breadcrumb-overly .breadcrumb-item a,
+.item-Product .breadcrumb a{
     color: #1e285d;
 }
 @media ( max-width:595px ){
@@ -342,4 +344,62 @@ Theme Name: Giftery Website
 }
 .sort .options{
     padding-left: 0.5rem;
+}
+/*items product*/
+.item-Product .carousel .carousel-indicators .img-pointer{
+    width: 30px;
+    height: 30px;
+}
+
+.item-Product .carousel .carousel-indicators{
+    bottom: -40px;
+}
+
+.item-Product .product-info .head h1{
+    color: #1e285d;
+}
+.item-Product .product-info .rev-star,
+.item-Product .product-info .add-rev,
+.item-Product .hash .stock,
+.item-Product .price .diss,
+.item-Product .price .main{
+    border-left: 1px solid rgba(117, 116, 116, 0.39);
+    padding-left: 5px;
+}
+
+.item-Product .product-info .rev-star,
+.item-Product .price .offer{
+    color: #dc3545
+}
+.item-Product .hash .stock .status{
+    color: green;
+}
+.item-Product .price .offer{
+    font-size: 1.5rem;
+}
+.item-Product .price .main{
+    text-decoration-line: line-through;
+}
+.item-Product .price .rate{
+    background-color: #dc3545;
+    font-size: 1rem;
+    padding: 12px 12px 5px 12px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.item-Product .order .washlist .g-fav{
+    cursor: pointer;
+} 
+
+.item-keys{
+    border-top: 1px solid rgba(117, 116, 116, 0.39);
+    margin-top: 1rem;
+}
+.item-keys .tab-pane .add-review p .link:hover{
+    color: #dc3545;
 }
