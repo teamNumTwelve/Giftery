@@ -114,3 +114,49 @@ $(".close").on("click",function(){
   "user strict";
   $(".menu-bars").slideToggle(500);
 });
+
+//item handel
+
+$("#send-review").on("click",function(){
+  const rate = $("#star-rate").val();
+  const message = $("#message-text").val();
+  if(validator.isEmpty(rate)){
+    $("#star-rate").addClass("is-invalid");
+    return false;
+  } else{
+    $("#star-rate").removeClass("is-invalid");
+    $("#star-rate").addClass("is-valid");
+  }
+
+  if(validator.isEmpty(message) || !validator.isAlphanumeric(message,['en-US'])){
+    $("#message-text").addClass("is-invalid");
+    return false;
+  } else{
+    $("#message-text").removeClass("is-invalid");
+    $("#message-text").addClass("is-valid");
+  }
+  return;
+});
+
+
+$("#message-text").on("change",function(){
+  const message = $("#message-text").val();
+  if(validator.isEmpty(message) || !validator.isAlphanumeric(message,['en-US'])){
+    $("#message-text").addClass("is-invalid");
+    return false;
+  } else{
+    $("#message-text").removeClass("is-invalid");
+    $("#message-text").addClass("is-valid");
+  }
+});
+
+$("#star-rate").on("change",function(){
+  const rate = $("#star-rate").val();
+  if(validator.isEmpty(rate)){
+    $("#star-rate").addClass("is-invalid");
+    return false;
+  } else{
+    $("#star-rate").removeClass("is-invalid");
+    $("#star-rate").addClass("is-valid");
+  }
+});
