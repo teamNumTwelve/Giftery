@@ -400,8 +400,14 @@ Theme Name: Giftery Website
     border-top: 1px solid rgba(117, 116, 116, 0.39);
     margin-top: 1rem;
 }
-.item-keys .tab-pane .add-review p .link:hover{
+.item-keys .tab-pane .add-review p .link:hover,
+.login-form-style .link:hover,
+.login-form-style .form-head .lead,
+.login-form-style .form-head h3 span{
     color: #dc3545;
+}
+.login-form-style .form-head h3{
+    color: #1e285d;
 }
 
 
