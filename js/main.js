@@ -160,3 +160,103 @@ $("#star-rate").on("change",function(){
     $("#star-rate").addClass("is-valid");
   }
 });
+
+
+
+
+
+
+
+
+
+var items = document.getElementById("items");
+var shoppingsec1 = document.getElementById("shoppingsec1");
+var btnInc = document.getElementById("increment-item");
+var btnDec = document.getElementById("decrement-item");
+
+
+let currentUser = {
+    firstname :"Mohamed",
+    email:"example@gmail.com",
+    items :[{
+        id: '123456755559',
+        price: '$19.99',
+        quantity: 1     
+    },
+    {
+        id: '123456788889',
+        price: '$54.00',
+        quantity: 2 
+    }]
+};
+
+function show(){
+    
+    var itemsHtml="";
+    for(var i = 0 ; i < currentUser.items.length ; i++){
+        itemsHtml+=`    <!-- itemblock -->
+        <div class="row d-flex flex-row justify-content-center item-block mt-4 p-0 m-0" data-aos="flip-left">
+            <!-- img -->
+            <div class="col-12 col-md-12 col-lg-4 item-img d-flex flex-column align-items-center">
+                <img class="w-100 img-fluid p-0 m-0" src="images/w5.jpg">
+            </div>
+            <!-- item-block-data -->
+            <div class="row col-12  col-md-12 col-lg-8 item-block-data p-0 m-0">
+                <h5 class="p-0 m-0 mt-2 ml-2"><strong>Lorem ipsum dolor, sit amet.</strong></h5>
+                <div class="row col-12 p-0 m-0">
+                    <!-- itemblockdata-inner1 -->
+                    <div class="itemblockdata-inner1 col-6 col-sm-6 col-md-6 d-flex flex-column align-items-between align-content-between">
+                        <h6>`+currentUser.items[i].price+`</h4>
+                        <p class="remove-item">Remove</p>
+                    </div>
+                    <!-- itemblockdata-inner1 -->
+                    <!-- itemblockdata-inner2 -->
+                    <div class="itemblockdata-inner2 col-6 col-sm-6 col-md-6 d-flex d-flex flex-column align-items-center align-content-start">
+                        <div class="modify-item d-flex flex-column align-items-center align-content-center ">
+                            <h5><strong>Quantity</strong></h5>
+                            <div class="modify-group d-flex flex-row justify-content-between d-flex align-items-center text-center">
+                                <button type="button" class="btn btn-secondary mt-0 mb-0 pt-0 pb-0" id="decrement-item">-</button>
+                                <p class="item-quantity mt-0 mb-0 pt-0 pb-0 mr-3 ml-3">`+currentUser.items[i].quantity+`</p>
+                                <button type="button" class="btn btn-secondary mt-0 mb-0 pt-0 pb-0" id="increment-item">+</button>
+                            </div>                                  
+                        </div>
+                        <p class="pt-1">$0.00</p>
+                    </div>
+                    <!-- itemblockdata-inner2 -->
+                </div>
+            </div>
+            <!-- item-block-data -->
+        </div>
+        <!-- itemblock -->`
+    }
+    // console.log(itemsHtml);
+    shoppingsec1.innerHTML += itemsHtml;
+}
+show();
+
+/////////////////////////////////////////////
+// page2
+
+$(".tab").each(function(e){
+    if($(this).attr("toggle") == "0"){
+        $(this).siblings(".content").css("display","none ");
+    }
+})
+
+$(".tab").click(function(){
+    console.log("dsfsdfsdf")
+    if($(this).attr("toggle") == "1"){
+        console.log("11111111")
+        $(this).attr("toggle","0")
+        $(this).siblings(".content").children().slideUp()
+        $(this).siblings(".content").slideUp();
+        // $(this).siblings().slideUp()
+    }
+    else{
+        console.log("000000")
+        $(this).attr("toggle","1")
+        $(this).siblings(".content").slideToggle() 
+        $(this).siblings(".content").children().slideDown()
+    }
+});
+

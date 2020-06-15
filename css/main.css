@@ -403,3 +403,86 @@ Theme Name: Giftery Website
 .item-keys .tab-pane .add-review p .link:hover{
     color: #dc3545;
 }
+
+
+
+
+/*
+Auther: Route Team 12
+Theme Name: Giftery Website
+*/
+/*start first section*/
+
+.shopping-cart{
+    /* background-color: violet; */
+}
+.shopping-sec1{
+    /* background-color: teal; */
+}
+.item-block{
+    /* padding-top:10px!important; */
+    /* background-color: rgb(184, 231, 231); */
+}
+.item-img{
+    /* background-color: chartreuse; */
+    padding: 0!important;
+    /* padding: 20px!important; */
+    margin:0!important; 
+}
+.item-block-data{
+    /* padding-left: 20px!important; */
+    /* background-color: rgb(129, 143, 115); */
+}
+.itemblockdata-inner1{
+    /* background-color: rgb(236, 201, 201); */
+    padding-top:10px!important;
+    
+}
+.itemblockdata-inner2{
+    /* background-color: rgb(243, 119, 119); */
+    padding-top:10px!important;
+}
+
+.shopping-sec2{
+    /* background-color: tomato; */
+}
+
+.modify-group{
+    /* background-color: rgb(163, 160, 159); */
+}
+
+.item-img{
+/* padding-right: 20px!important; */
+}
+
+
+/* page2 */
+
+
+
+.tab{
+    background-color: rgb(215, 210, 221);
+    cursor: pointer;
+}
+@media only screen and (max-width:500px) {
+    .checkout-item-name {
+      padding-top:20px!important;
+      /* color:blue; */
+    }
+}
+.payment-icon{
+    cursor: pointer;
+
+}
+
+.payment-icon{
+    font-size:4em !important;
+    color:#5A6268;
+    /* background-color: yellow; */
+}
+/* to hide input up and down arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
