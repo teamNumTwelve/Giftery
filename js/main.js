@@ -185,29 +185,6 @@ $("#userEmail").on("change",function(){
     $("#userEmail").addClass("is-valid");
   }
 });
-$("#reUserEmail").on("change",function(){
-  const rate = $("#reUserEmail").val();
-  if(!validator.isEmail(rate) || validator.isEmpty(rate)){
-    $("#reUserEmail").addClass("is-invalid");
-    $("#error").html("Your value <strong> "+rate+" </strong> is not email");
-    return false;
-  } else{
-    $("#reUserEmail").removeClass("is-invalid");
-    $("#reUserEmail").addClass("is-valid");
-  }
-});
-$("#resetPass").on("click",function(){
-  const useremail = $("#reUserEmail").val();
-
-  if(validator.isEmpty(useremail) || !validator.isEmail(useremail)){
-    $("#reUserEmail").addClass("is-invalid");
-    return false;
-  } else{
-    $("#reUserEmail").removeClass("is-invalid");
-    $("#reUserEmail").addClass("is-valid");
-  }
-  return;
-});
 $("#loginSubmit").on("click",function(){
   const pass = $("#userPass").val();
   const useremail = $("#userEmail").val();
@@ -232,6 +209,31 @@ $("#loginSubmit").on("click",function(){
   } else{
     $("#userEmail").removeClass("is-invalid");
     $("#userEmail").addClass("is-valid");
+  }
+  return;
+});
+/*forget password */
+$("#reUserEmail").on("change",function(){
+  const rate = $("#reUserEmail").val();
+  if(!validator.isEmail(rate) || validator.isEmpty(rate)){
+    $("#reUserEmail").addClass("is-invalid");
+    $("#error").html("Your value <strong> "+rate+" </strong> is not email");
+    return false;
+  } else{
+    $("#error").empty();
+    $("#reUserEmail").removeClass("is-invalid");
+    $("#reUserEmail").addClass("is-valid");
+  }
+});
+$("#resetPass").on("click",function(){
+  const useremail = $("#reUserEmail").val();
+
+  if(validator.isEmpty(useremail) || !validator.isEmail(useremail)){
+    $("#reUserEmail").addClass("is-invalid");
+    return false;
+  } else{
+    $("#reUserEmail").removeClass("is-invalid");
+    $("#reUserEmail").addClass("is-valid");
   }
   return;
 });
